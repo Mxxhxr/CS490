@@ -15,4 +15,4 @@ data = {
 r = requests.post('https://student-info-api.netlify.app/.netlify/functions/submit_student_info', json=data)
 
 print("Status Code: ", r.status_code)
-print("Response: ", r.text)
+print("Response: ", r.json())
